@@ -10,7 +10,7 @@
     }
     
     header nav {
-        padding: 0px 12% 17px 12%;
+        margin: 0px 12% 17px 12%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -25,7 +25,7 @@
     }
     
     header nav ul li {
-        margin: 0px 55px 10px 0;
+        margin: 0px 0px 10px 20px;
         cursor: pointer;
         padding: 20px 20px 20px 20px;
     }
@@ -133,6 +133,7 @@
         -webkit-transition: .3s ease-in-out;
         transition: .3s ease-in-out;
         transition-duration: 250ms;
+        font-size: 20px;
     }
     
     .buttonfilter:hover {
@@ -223,7 +224,6 @@
         border: 2px solid #F2F2F2;
         margin: 10px 10px 10px 0;
         border-radius: 5em 5em 5em 5em;
-        ;
         width: 1.8rem;
         height: 1.8rem;
     }
@@ -232,22 +232,23 @@
     .host-pop{
         display: flex;
         flex-direction: row;
-        justify-content: space-between
-    ;
+        justify-content: space-between;
     }
 
     .host {
         background-color: #f2f2f2;
-        margin: 10px 0 10px 12%;
+        margin: 10px 0 12px 12%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 50%;
+        width: 45%;
         border-radius: 1.2em 1.2em 1.2em 1.2em;
+        justify-content: space-between;
     }
     
     .host-title {
-        padding: 5px 1% 5px 3.5%;
+        height: 3%;
+        margin-left:1em ;
     }
     
     .container {
@@ -258,6 +259,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 0 0.5em 0 0.5em;
+    
     }
     
     .hosting-card {
@@ -265,7 +267,7 @@
         cursor: pointer;
         background-color: #ffffff;
         border-radius: 25px;
-        margin-bottom: 2em;
+        /* margin-bottom: 2em; */
         padding: 7px;
         color: black;
         font-size: 16px;
@@ -313,7 +315,7 @@
     
     .plus {
         text-decoration: none;
-        padding: 0em 2em 2em 2em;
+        padding: 0em 2em 0 2em;
         font-weight: 700;
         color: black;
     }
@@ -323,7 +325,7 @@
     }
     /*  Stars */
     
-    .stars {
+    .stars-host {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -352,41 +354,45 @@
         flex-direction: row;
         order: 2;
         flex-wrap: wrap;
-        width: 30%;
+        width: 27%;
         border-radius: 1.2em 1.2em 1.2em 1.2em;
+        justify-content: center;
     }
     
     .pop-title {
-        padding: 5px 1% 5px 3.5%;
+      
+        margin-right: auto;
+        margin-left: 1em ;
     }
     
     .pop-container {
-        /* padding: 5px 7% 5px 7%; */
         background-color: #f2f2f2;
         display: flex ;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 1 0.5em 1 0.5em;
+        justify-content: space-between;
     }
     
     .pop-card {
+        display: flex;
+        flex-direction: row;
         opacity: 1;
         cursor: pointer;
         background-color: #ffffff;
         border-radius: 25px;
-        margin-bottom: 2em;
         padding: 7px;
         color: black;
         font-size: 16px;
-        width: 50%;
-        height: 30%;
+        width: 90%;
+        height: 20%;
         text-align: center;
         justify-content: center;
         align-items: center;
         box-shadow: 1.5px 1.5px rgb(216, 202, 202), 1.5px 1.5px rgb(216, 202, 202);
         transform: scale(1);
         transition: .1s ease-in-out;
+        text-decoration: none;
+
     }
     
     .pop-card:hover {
@@ -399,9 +405,9 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-content: center;
-        border-radius: 20px 20px 0 0;
-        width: 100%;
-        height: 7em;
+        border-radius: 20px 0 0 20px;
+        width: 30%;
+        height: 100%;
         margin-bottom: 0;
         object-fit: cover;
     }
@@ -410,30 +416,37 @@
         display: flex;
         flex-direction: column;
         text-align: justify;
+        justify-content: start;
         font-size: large;
+        align-items: stretch;
         margin: 0;
         padding-left: 0.3em;
         padding-top: 0.3em;
-        line-height: 1.5em;
+        width: 70%;
+        height: 100%;
+
     }
     
     .container a {
         text-decoration: none;
     }
     
-    .host-description p {
-        margin: 0;
+    .pop-description p {
+        margin-top: 0;
     }
+
+
     /*  Stars */
     
-    .stars {
+    .stars-pop {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: flex-start;
+        align-items: str;
         color: #0065FC;
-        margin-top: 0.3em;
-        margin-bottom: 0.5em;
+        margin-top: auto;
+        padding-bottom: 0.5em;
+        padding-left: 0.3em;
     }
     
     .fa-star {
@@ -443,4 +456,17 @@
     .gray-stars {
         color: #F2F2F2;
         padding-right: 0.3em;
+    }
+    
+    .price{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+       
+    }
+
+    .price p{
+        padding-left: 0.5em;
+        margin-top:0 ;
+        margin-bottom: 0;
     }

@@ -229,9 +229,16 @@
     }
     /* Section Hébergement/ */
     
+    .host-pop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+    ;
+    }
+
     .host {
         background-color: #f2f2f2;
-        margin: 10px 12% 10px 12%;
+        margin: 10px 0 10px 12%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -334,16 +341,18 @@
         color: #F2F2F2;
         padding-right: 0.3em;
     }
+    
+    
     /* Les plus populaire */
     
     .popular {
         background-color: #f2f2f2;
-        margin: 10px 12% 10px 12%;
+        margin: 10px 12% 10px 0;
         display: flex;
         flex-direction: row;
         order: 2;
         flex-wrap: wrap;
-        width: 50%;
+        width: 30%;
         border-radius: 1.2em 1.2em 1.2em 1.2em;
     }
     
@@ -354,7 +363,7 @@
     .pop-container {
         /* padding: 5px 7% 5px 7%; */
         background-color: #f2f2f2;
-        display: flex;
+        display: flex ;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;

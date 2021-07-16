@@ -483,20 +483,36 @@
     /*  Section Activités */
 
 .activity {
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     margin: 10px 12% 12px 12%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 76%;
+    /* justify-content: center;
+    align-items: center;
+    width: 76%; */
     border-radius: 1.2em 1.2em 1.2em 1.2em;
+   
+}
+
+.title-activity{
+
+    margin-left:1em ;
+    padding-top: 1em;
+    margin-bottom: 1em;
 }
 
 .activity-group{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 40em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "a1 a2 a4 a5"
+    "a1 a2 a4 a6"
+    "a1 a3 a4 a6"
+    ;
+    gap: 2em;
+    grid-row-gap: 25px;
+  
 }
 
 /* Grandes Photos1 */
@@ -507,14 +523,15 @@
     border-radius: 25px;
     color: black;
     font-size: 16px;
-    width: 23%;
-    height: 100%;
+    width: 100%;
+    height: 33em;
     text-align: center;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transform: scale(1);
     transition: .1s ease-in-out;
+    text-decoration: none;
 }
 
 .activity-card1:hover {
@@ -535,10 +552,11 @@
     text-align: justify;
     justify-content: start;
     font-size: large;
-    width: 70%;
+    width: 100%;
     height: 100%;
     font-weight: bold;
-    margin-left: 1em;
+    margin-left: 1em;  
+   
 }
 
 /* Petites Photos2 */
@@ -549,15 +567,15 @@
     border-radius: 25px;
     color: black;
     font-size: 16px;
-    width: 23%;
-    height: 50%;
+    width: 100%;
+    height: 17em;
     text-align: center;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transform: scale(1);
     transition: .1s ease-in-out;
-   
+    text-decoration: none;
 }
 
 .activity-card2:hover {
@@ -568,7 +586,7 @@
     align-content: center;
     border-radius: 20px 20px 0 0;
     width: 100%;
-    height: 90%;
+    height: 80%;
     object-fit: cover;
 }
 
@@ -577,6 +595,7 @@
     flex-direction: row;
     text-align: justify;
     justify-content: start;
+    align-items: center;
     font-size: large;
     width: 70%;
     height: 100%;
@@ -593,15 +612,16 @@
     border-radius: 25px;
     color: black;
     font-size: 16px;
-    width: 23%;
-    height: 30%;
+    width: 100%;
+    height: 13em;
     text-align: center;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transform: scale(1);
     transition: .1s ease-in-out;
-    margin: 0.8em;
+    margin-top: 0;
+    text-decoration: none;
 }
 
 .activity-card3:hover {
@@ -612,7 +632,7 @@
     align-content: center;
     border-radius: 20px 20px 0 0;
     width: 100%;
-    height: 90%;
+    height: 70%;
     object-fit: cover;
 }
 
@@ -621,6 +641,7 @@
     flex-direction: row;
     text-align: justify;
     justify-content: start;
+    align-items: center;
     font-size: large;
     width: 70%;
     height: 100%;
@@ -631,21 +652,41 @@
 /* Order id */
 
 #i1{
-    order: 1;
+    grid-area: a1;
 }
 #i2{
-    order: 2;
+    grid-area: a2;
 }
 #i3{
-    order: 3;
+    grid-area: a3;
 }
 #i4{
-    order: 4;
+    grid-area: a4;
 }
 #i5{
-    order: 5;
+    grid-area: a5;
 }
 #i6{
-    order: 6;
+    grid-area: a6;
+}
+
+/* Section Footer */
+
+.footer{
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 15em;
+}
+
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.box-footer h3{
+    
+    
+
 }
 

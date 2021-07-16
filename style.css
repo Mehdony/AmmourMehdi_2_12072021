@@ -196,6 +196,7 @@
         display: flex;
         flex-direction: row;
         font-weight: 500;
+        cursor: pointer;
     }
 
     .p1 {
@@ -485,18 +486,17 @@
     background-color: #f2f2f2;
     margin: 10px 12% 12px 12%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 76%;
     border-radius: 1.2em 1.2em 1.2em 1.2em;
-    /* justify-content: space-between; */
 }
 
 .activity-group{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    flex-wrap: wrap; 
-    height: 100%;
-    padding-bottom: 2em;
+    height: 40em;
 }
 
 /* Grandes Photos1 */
@@ -507,8 +507,8 @@
     border-radius: 25px;
     color: black;
     font-size: 16px;
-    width: 15%;
-    height: 25%;
+    width: 23%;
+    height: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -549,15 +549,15 @@
     border-radius: 25px;
     color: black;
     font-size: 16px;
-    width: 15%;
-    height: 40%;
+    width: 23%;
+    height: 50%;
     text-align: center;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transform: scale(1);
     transition: .1s ease-in-out;
-    margin: 0.8em;
+   
 }
 
 .activity-card2:hover {
@@ -593,8 +593,8 @@
     border-radius: 25px;
     color: black;
     font-size: 16px;
-    width: 15%;
-    height: 50%;
+    width: 23%;
+    height: 30%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -626,5 +626,26 @@
     height: 100%;
     font-weight: bold;
     margin-left: 1em;
+}
+
+/* Order id */
+
+#i1{
+    order: 1;
+}
+#i2{
+    order: 2;
+}
+#i3{
+    order: 3;
+}
+#i4{
+    order: 4;
+}
+#i5{
+    order: 5;
+}
+#i6{
+    order: 6;
 }
 

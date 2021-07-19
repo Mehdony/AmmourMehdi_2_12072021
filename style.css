@@ -21,20 +21,35 @@ header nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-weight: 500;
+ 
 }
 
 header nav ul li {
-  margin: 0px 0px 10px 20px;
+  margin: 0px 0px 10px 0px;
   cursor: pointer;
   padding: 20px 20px 20px 20px;
 }
+
+li .border-top{
+   border-top: none;
+   position: fixed;
+   width: 50%;
+}
+
+.border-top:hover{
+  border-top: 3px solid #0065fc;
+ margin: 0;
+} 
+
 
 #sign {
   color: #0065fc;
@@ -493,7 +508,7 @@ header nav ul li:hover {
   flex-wrap: wrap;
   border-radius: 1.2em 1.2em 1.2em 1.2em;
   margin-bottom: 3em;
-}
+} 
 
 .title-activity {
   margin: 0.2em;
@@ -702,4 +717,37 @@ header nav ul li:hover {
 
 .link:hover {
   text-decoration: underline;
+}
+
+
+@media all and (max-width: 1544px) {
+
+  .host-pop {
+    flex-direction: column;
+  }
+
+    header nav {
+    margin: 0px 12% 17px 12%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+   
+  }
+  
+  header nav ul li {
+    margin: 0px 0px 10px 0px;
+    cursor: pointer;
+    padding: 20px 20px 20px 20px;
+  
+  } 
 }

@@ -135,6 +135,7 @@ header nav .nav-menu{
   margin-right: 1em;
   margin-left: 1.2em;
   cursor: pointer;
+  row-gap: 0.5em;
 }
 
 .buttonfilter {
@@ -379,7 +380,6 @@ header nav .nav-menu{
   flex-wrap: wrap;
   width: 25%;
   border-radius: 1.2em 1.2em 1.2em 1.2em;
-  /* justify-content: center; */
 }
 
 .pop-title {
@@ -780,10 +780,19 @@ header nav .nav-menu{
     margin: 0;
   }
 
+/* Section filtres */
+
 .filters{
   flex-direction: column;
+  align-items: flex-start;
 }
 
+.buttons {
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.5em;
+  margin: 0;
+}
 
 main{
   width: 100%;

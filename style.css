@@ -220,7 +220,6 @@ header nav .nav-menu{
   display: flex;
   flex-direction: row;
   font-weight: 500;
-  cursor: pointer;
 }
 
 .p1 {
@@ -375,12 +374,12 @@ header nav .nav-menu{
   background-color: #f2f2f2;
   margin: 10px 12% 10px 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   order: 2;
   flex-wrap: wrap;
   width: 25%;
   border-radius: 1.2em 1.2em 1.2em 1.2em;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .pop-title {
@@ -388,9 +387,10 @@ header nav .nav-menu{
   flex-direction: row;
   margin-right: auto;
   margin-left: 1em;
-  margin-top: 1em;
   align-items: center;
   align-self: center;
+  padding-top: 1em;
+  margin-bottom: 1.3em;
 }
 
 .fa-chart-line {
@@ -404,6 +404,9 @@ header nav .nav-menu{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
 }
 
 .pop-card {
@@ -417,7 +420,7 @@ header nav .nav-menu{
   color: black;
   font-size: 16px;
   width: 85%;
-  height: 22%;
+  height: 28%;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -426,6 +429,7 @@ header nav .nav-menu{
   transform: scale(1);
   transition: 0.1s ease-in-out;
   text-decoration: none;
+  
 }
 
 .pop-card:hover {

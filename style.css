@@ -21,6 +21,7 @@ header {
   box-sizing: border-box;
 }
 
+
 header nav {
   list-style: none;
   display: flex;
@@ -43,7 +44,7 @@ header nav .nav-menu{
 .nav-menu:hover {
   border-top: 3px solid #0065fc;
   box-sizing: border-box;
-} 
+}
 
 
 #sign {
@@ -56,6 +57,7 @@ header nav .nav-menu{
 
 
 /* Main - Section Rechercher */
+
 
 #recherche {
   padding: 0px 12% 17px 12%;
@@ -73,10 +75,10 @@ header nav .nav-menu{
 }
 
 #map {
-  width: 18px;
+  width: 1.2em;
   height: 15px;
   background-color: #f2f2f2;
-  padding: 1.2em 1.2em 1.2em 1.2em;
+  padding: 1.2em ;
   border-radius: 0.8em 0 0 0.8em;
   border: 1px solid #f2f2f2;
   transform: scale(1);
@@ -88,16 +90,16 @@ header nav .nav-menu{
 }
 
 #marecherche {
-  padding: 1em 1em 1em 1em;
-  font-size: 16px;
+  padding: 1em ;
+  font-size: 1em;
   font-weight: 600;
   border: 1px solid #f2f2f2;
   margin: 0%;
 }
 
 #button {
-  padding: 1em 1em 1em 1em;
-  font-size: 16px;
+  padding: 1em ;
+  font-size: 1em;
   font-weight: 700;
   border: none;
   background-color: #0065fc;
@@ -504,7 +506,7 @@ header nav .nav-menu{
   flex-wrap: wrap;
   border-radius: 1.2em 1.2em 1.2em 1.2em;
   margin-bottom: 3em;
-} 
+}
 
 .title-activity {
   margin: 0.2em;
@@ -716,9 +718,110 @@ header nav .nav-menu{
 }
 
 
-@media all and (max-width: 1544px) {
+/* ------ Version MOBILE ------ */
 
-  .host-pop {
+@media all and (max-width: 640px) {
+
+  body{
+    display: flex;
     flex-direction: column;
+    margin:0;
+    justify-content: center;
+    width: 100%;
+
   }
+
+    /*  Header */
+
+  header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:space-between;
+  }
+  .nav-menu{
+    width: 50%;
+    text-align: center;
+
+  }
+  .logo{
+    order: 1;
+    margin: 0 auto 0 0 ;
+
+  }
+
+  .logo img{
+    width: 100%;
+  }
+
+  nav{
+    order: 3;
+    width: 100%;
+    margin: 0;
+  }
+
+  #sign{
+    order: 2;
+    padding: 0;
+    width: 50%;
+    text-align: end;
+    margin-right: 1em;
+  }
+
+   /*  Section Recherche */
+
+#recherche {
+    padding: 0;
+    margin: 0;
+  }
+
+.filters{
+  flex-direction: column;
+}
+
+
+main{
+  width: 100%;
+  margin: 0;
+}
+
+.activity-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas :
+    "a1" "a2" "a3" "a4" "a5" "a6";
+  gap: 2em;
+  grid-row-gap: 25px;
+}
+
+#i1, #i2, #i3, #i4, #i5, #i6 {
+  height: 15em;
+}
+
+.activity-img1, .activity-img2, .activity-img3{
+  height: 90%;
+}
+
+#marecherche {
+  width: 75vw;
+  font-size: 0.8em;
+  padding: 0.8em ;
+}
+
+#button {
+  font-size: 0.8em;
+  padding: 0.8em ;
+}
+
+.title {
+  font-size: 1.8em;
+  margin-left: 1em;
+}
+
+#recherche p {
+  margin-left: 1.9em;
+}
+
 }

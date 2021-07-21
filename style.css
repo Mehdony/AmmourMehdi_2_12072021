@@ -62,6 +62,7 @@ header nav .nav-menu{
 
 #recherche {
   padding: 0px 12% 17px 12%;
+  box-sizing: border-box;
 }
 
 .title {
@@ -97,6 +98,9 @@ header nav .nav-menu{
   border: 1px solid #f2f2f2;
   margin: 0%;
 }
+
+span.icon {display:none}
+span.text {display:inline-block}
 
 ::placeholder {
   color: black;
@@ -770,7 +774,22 @@ header nav .nav-menu{
   .nav-menu{
     width: 50%;
     text-align: center;
-
+    border-bottom: 3px solid #f2f2f2;
+    border-top: none;
+    padding: 1em;
+  }
+  
+  .nav-menu:hover {
+    border-top: none;
+    border-bottom: 3px solid #0065fc;
+    box-sizing: border-box;
+    color: #0065fc;
+  }
+  
+  header nav .nav-menu{
+    padding: 17px;
+   
+  
   }
   .logo{
     order: 1;
@@ -818,6 +837,8 @@ header nav .nav-menu{
 }
 
 main{
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin: 0;
 }
@@ -840,26 +861,35 @@ main{
   height: 90%;
 }
 
+
+.search{
+  margin-left: 1.5em;
+}
+
 #marecherche {
-  width: 75vw;
-  font-size: 0.8em;
+  /* width: 75vw; */
+  font-size: 1em;
   padding: 0.8em ;
 }
 
 #button {
-  font-size: 0.8em;
-  padding: 0.8em ;
+  font-size: 1em;
+  padding: 0.8em  1.2em;
+  border-radius: 1em ;
 }
 
+
 .title {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin-left: 1em;
 }
 
 #recherche p {
-  margin-left: 1.9em;
+  margin-left: 1.7em;
 }
 
+span.icon {display:inline-block}
+span.text {display:none}
 
 /*  Filters */
 
@@ -868,12 +898,15 @@ main{
   margin-left: 1em;
   padding: 0;
 }
+.filterstitle{
+  margin-left: 0.3em;
+}
 
 .buttonfilter {
   font-size: 16px;
   margin-right: 1em;
   margin-left: 0;
-   padding-right: 0.5em;
+  padding-right: 1em;
 }
 
 .buttons {
@@ -882,9 +915,10 @@ main{
  width: 100%;
 }
 
-#iconfilter{
-margin-right: 0;
+#iconefilter, #iconefilter1, #iconefilter2, #iconefilter3{
+  margin-right: 0.5em;
 }
+
 
 /*  Host&Pop */
 
@@ -935,6 +969,27 @@ margin-right: 0;
 #pop-img3{
   width: 48% ;
 }
+
+.info {
+  width: 100%;
+  font-weight: 500;
+  padding: 0.8em;
+  
+}
+
+.p1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#iconeinfo {
+  border-radius: 100%;
+  width: 2.3rem;
+  height: 1.8rem;
+}
+
 
 .footer{
   height: auto;

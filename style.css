@@ -44,6 +44,7 @@ header nav .nav-menu{
 .nav-menu:hover {
   border-top: 3px solid #0065fc;
   box-sizing: border-box;
+  color: #0065fc;
 }
 
 
@@ -95,6 +96,12 @@ header nav .nav-menu{
   font-weight: 600;
   border: 1px solid #f2f2f2;
   margin: 0%;
+}
+
+::placeholder {
+  color: black;
+  /* Pour firefox */
+  opacity: 1;
 }
 
 #button {
@@ -238,7 +245,7 @@ header nav .nav-menu{
   color: #0065fc;
   border: 2px solid #f2f2f2;
   margin: 0 10px 0 0;
-  border-radius: 5em 5em 5em 5em;
+  border-radius: 100%;
   width: 1.8rem;
   height: 1.8rem;
 }
@@ -382,6 +389,16 @@ header nav .nav-menu{
   border-radius: 1.2em 1.2em 1.2em 1.2em;
 }
 
+.pop-title-grp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%;
+  
+}
+
+
 .pop-title {
   display: flex;
   flex-direction: row;
@@ -396,7 +413,8 @@ header nav .nav-menu{
 .fa-chart-line {
   display: flex;
   flex-direction: row;
-  margin-left: 7em;
+  padding-top: 0.5em;
+  font-size: 1.5em;
 }
 
 .pop-container {
@@ -445,6 +463,10 @@ header nav .nav-menu{
   height: 100%;
   margin-bottom: 0;
   object-fit: cover;
+}
+
+#pop-img3{
+  width: 31% ;
 }
 
 .pop-description {
@@ -838,6 +860,32 @@ main{
   margin-left: 1.9em;
 }
 
+
+/*  Filters */
+
+
+.filters {
+  margin-left: 1em;
+  padding: 0;
+}
+
+.buttonfilter {
+  font-size: 16px;
+  margin-right: 1em;
+  margin-left: 0;
+   padding-right: 0.5em;
+}
+
+.buttons {
+ flex-direction: row;
+ flex-wrap:  wrap;
+ width: 100%;
+}
+
+#iconfilter{
+margin-right: 0;
+}
+
 /*  Host&Pop */
 
 .host-pop {
@@ -846,6 +894,47 @@ main{
   width: 100%;
 }
 
+.popular {
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 0;
+  padding-bottom: 2em;
+  justify-content: center;
+  align-items: center; 
+}
+
+.pop-container {
+  width: 100%;
+  height: 100%;
+  row-gap: 1em;
+}
+
+.pop-card {
+  width: 85%;
+  height: 10em;
+ }
+
+.pop-title {
+  margin-left: 0.2em;
+}
+
+ .fa-chart-line {
+  margin-left: 3em;
+  font-size: 1.4em;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.pop-img {
+  width: 40%;
+  height: 100%;
+ 
+}
+
+#pop-img3{
+  width: 48% ;
+}
 
 .footer{
   height: auto;
@@ -859,6 +948,8 @@ main{
   width: 70%;
   margin-left: 12%;
 }
+
+
 
 
 }

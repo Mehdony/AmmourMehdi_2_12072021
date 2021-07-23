@@ -248,7 +248,7 @@ span.text {display:inline-block}
   align-items: center;
   color: #0065fc;
   border: 2px solid #f2f2f2;
-  margin: 0 10px 0 0;
+  margin: 0.5em 10px 0 0;
   border-radius: 100%;
   width: 1.8rem;
   height: 1.8rem;
@@ -399,7 +399,7 @@ span.text {display:inline-block}
   justify-content: space-between;
   align-items: center;
   width: 93%;
-  
+
 }
 
 
@@ -451,7 +451,7 @@ span.text {display:inline-block}
   transform: scale(1);
   transition: 0.1s ease-in-out;
   text-decoration: none;
-  
+
 }
 
 .pop-card:hover {
@@ -782,17 +782,17 @@ html, body{
     border-top: none;
     padding: 1em;
   }
-  
+
   .nav-menu:hover {
     border-top: none;
     border-bottom: 3px solid #0065fc;
     box-sizing: border-box;
     color: #0065fc;
   }
-  
+
   header nav .nav-menu{
     padding: 17px;
-   
+
   }
   .logo{
     order: 1;
@@ -900,6 +900,11 @@ span.text {display:none}
  width: 100%;
 }
 
+/* #test{
+  width: 100%;
+} */
+
+
 #iconefilter, #iconefilter1, #iconefilter2, #iconefilter3{
   margin-right: 0.5em;
 }
@@ -921,7 +926,8 @@ span.text {display:none}
   border-radius: 0;
   padding-bottom: 2em;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+
 }
 
 .pop-container {
@@ -937,6 +943,7 @@ span.text {display:none}
 
 .pop-title {
   margin-left: 0.2em;
+  margin-top: 0.3em;
   width: 80%;
 }
 
@@ -945,13 +952,13 @@ span.text {display:none}
   font-size: 1.4em;
   justify-content: center;
   align-items: center;
-
+  padding-top: 0;
 }
 
 .pop-img {
   width: 40%;
   height: 100%;
- 
+
 }
 
 #pop-img3{
@@ -959,10 +966,10 @@ span.text {display:none}
 }
 
 .info {
-  width: 85%;
+  width: 100%;
   font-weight: 500;
   padding: 0.8em;
-  
+  align-items: center;
 }
 
 .p1 {
@@ -970,11 +977,16 @@ span.text {display:none}
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 #iconeinfo {
+  align-items: center;
+  color: #0065fc;
+  border: 2px solid #f2f2f2;
+  margin: 0 10px 0 0;
   border-radius: 100%;
-  width: 2.3rem;
+  width: 1.8rem;
   height: 1.8rem;
 }
 
@@ -997,7 +1009,7 @@ span.text {display:none}
 
 .container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -1029,12 +1041,13 @@ span.text {display:none}
   margin: 0 0 3em 0;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .title-activity{
-  margin-left: 0.5em;
-  margin-bottom: 0.8em;
+  padding-top: 0.6em;
+ margin-right: auto;
+ margin-left:  0.7em;
 }
 
 .activity-group {
@@ -1074,7 +1087,7 @@ span.text {display:none}
 
 .footer{
   height: auto;
-  width: 100%;  
+  width: 100%;
 }
 
 .box-footers {
@@ -1090,6 +1103,6 @@ span.text {display:none}
 .block-footer {
     width: 100%;
     margin-left: 3.5em;
-    
+
 }
 }

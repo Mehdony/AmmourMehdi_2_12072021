@@ -745,6 +745,25 @@ span.text {
 }
 
 
+ @media all and (max-width: 1580px) {
+
+  .hosting-card{
+    width: 40%;
+    height: 28%;
+  }  
+
+  .pop-card {
+    width: 90%;
+    height: 28%;
+  }
+
+  .pop-container{
+     row-gap: 2em;
+  }
+
+
+ }
+
   /*  Version TABLETTE */
 
 @media all and (max-width: 1000px) {
@@ -1184,6 +1203,7 @@ span.text {
     width: 100%;
     font-weight: 500;
     padding: 0.8em;
+    margin-left: 0.3em;
     align-items: center;
   }
 
@@ -1278,6 +1298,7 @@ span.text {
   .activity-description2,
   .activity-description3 {
     margin: 0.7em;
+    font-size: 1em;
   }
 
   .activity-card1,

@@ -758,15 +758,25 @@ span.text {
   }
 
   .pop-container{
-     row-gap: 2em;
+    height: 80%;
+    justify-content: inherit;
+    row-gap: 1.9em;
   }
 
+  .pop-img {
+    width: 43%;
+    height: 100%;
+  }
+
+  #pop-img3 {
+    width: 54%;
+  }
 
  }
 
   /*  Version TABLETTE */
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1360px) {
   html,
   body {
     overflow-x: hidden;
@@ -860,6 +870,14 @@ span.text {
   .pop-img {
     width: 40%;
     height: 100%;
+  }
+
+  #pop-img1{
+  width: 36% ;
+  }
+
+  #pop-img3{
+    width: 40%;
   }
 
   /* Sextion Hébergements TABLETTE */
@@ -1194,6 +1212,10 @@ span.text {
     width: 40%;
     height: 100%;
   }
+
+  #pop-img1{
+    width: 40% ;
+    }
 
   #pop-img3 {
     width: 48%;

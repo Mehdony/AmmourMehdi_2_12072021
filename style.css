@@ -55,7 +55,7 @@ header nav .nav-menu {
 
 /* Main - Section Rechercher */
 
-#recherche {
+#search-box {
   padding: 0px 12% 17px 12%;
   box-sizing: border-box;
 }
@@ -86,7 +86,7 @@ header nav .nav-menu {
   transform: scale(1.02);
 }
 
-#marecherche {
+#mysearch {
   padding: 1em;
   font-size: 1em;
   font-weight: 600;
@@ -796,7 +796,7 @@ span.text {
   
   /*  Section Recherche TABLETTE */
 
-  #recherche {
+  #search-box {
     margin: 1em 0 0 1em;
   }
   
@@ -804,7 +804,7 @@ span.text {
     margin-left: -2em;
   }
 
-  #recherche p {
+  #search-box p {
     margin-left: -3.5em;
   }
 
@@ -1090,7 +1090,7 @@ span.text {
 
   /*  Section Recherche MOBILE */
 
-  #recherche {
+  #search-box {
     padding: 0;
     margin: 0;
   }
@@ -1118,7 +1118,7 @@ span.text {
     margin-left: 1.5em;
   }
 
-  #marecherche {
+  #mysearch {
     border-radius: 0;
     font-size: 1em;
     padding: 0.8em;
@@ -1135,7 +1135,7 @@ span.text {
     margin-left: 1em;
   }
 
-  #recherche p {
+  #search-box p {
     margin-left: 1.7em;
   }
 

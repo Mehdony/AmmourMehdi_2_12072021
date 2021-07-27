@@ -744,6 +744,8 @@ span.text {
   text-decoration: underline;
 }
 
+/*  Version Intermédiaire */
+
 
  @media all and (max-width: 1580px) {
 
@@ -774,7 +776,7 @@ span.text {
 
  }
 
-  /*  Version TABLETTE */
+  /* --- Version TABLETTE --- */
 
 @media all and (max-width: 1360px) {
   html,
@@ -785,8 +787,11 @@ span.text {
     /*  Section header TABLETTE */
 
     header {
-    margin: 1em 0 17px 1em;
-  
+    margin: 0 0 17px 1em;
+  }
+
+  .nav-menu {
+    padding: 2em;
   }
   
   /*  Section Recherche TABLETTE */
@@ -854,9 +859,11 @@ span.text {
   }
 
   .pop-title {
-    margin-left: 1em;
+    margin-left: 2em;
     margin-top: 0.3em;
     width: 80%;
+    justify-content: center;
+    align-items: center;
   }
 
   .fa-chart-line {

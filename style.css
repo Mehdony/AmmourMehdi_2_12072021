@@ -1026,6 +1026,9 @@ span.text {
 
   /*  Header MOBILE */
 
+  header{
+   margin-left: 0 ;
+  }
 
   .nav-menu {
     width: 50%;

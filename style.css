@@ -1002,7 +1002,7 @@ span.text {
   align-items: flex-start;
   width: 100%;
   margin: 0;
-  padding: 1em 0 3em 0;
+  padding: 1em 0 0 0;
 }
 
 .block-footer {

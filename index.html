@@ -14,15 +14,18 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-   
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/452bf3aaa3.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+  
   </head>
 
   <body>
+
+    <!--  Header : Logo + NAV  -->
+
     <header>
       <a class="logo" href="#">
         <img src="images/logo/Reservia.svg" alt="logo Reservia" />
@@ -35,13 +38,16 @@
     </header>
 
     <main>
+
+      <!--  Section Recherche  -->
+
       <section id="search-box">
         <h1 class="title">
           Trouvez votre hébergement pour des vacances de rêve
         </h1>
         <p>En plein centre ville ou en pleine nature</p>
         <form class="search">
-          <img id="map" src="map-marker-alt-solid.svg" alt="map-marker" />
+          <i id="map" class="fas fa-map-marker-alt"></i>
           <input
             type="search"
             id="mysearch"
@@ -54,6 +60,7 @@
         </form>
       </section>
 
+      <!--  Section Filtres + Info -->
       <section class="filters">
         <h2 class="filterstitle">Filtres</h2>
         <div class="buttons">
@@ -70,24 +77,31 @@
           <a class="buttonfilter" href=""
             ><i id="iconefilter3" class="fas fa-dog"></i>Animaux autorisés</a
           >
-        </div>
-      </section>
-
-      <div class="info">
-        <i id="iconeinfo" class="fas fa-info"></i>
-        <p class="p1">
-          Plus de 500 logements sont disponibles dans cette ville
-        </p>
+          
       </div>
-
+           
+      </section>
+      
+            <div class="info">
+              <i id="iconeinfo" class="fas fa-info"></i>
+              <p class="p1">
+              Plus de 500 logements sont disponibles dans cette ville
+              </p>
+            </div>
+       
+     
+      <!--  Section Hébergements + Populaires  -->
       <div class="host-pop">
+
+        <!--  Section Hébergements  -->
+
         <section class="host" id="host-link">
           <h2 class="host-title">Hébergements à Marseille</h2>
           <div class="container">
             <a class="hosting-card" href="#"
               ><img
                 class="host-img"
-                src="images/hebergements/3_medium/Cannebière.jpg"
+                src="images/hebergements/4_small/cannebière.jpg"
                 alt="Auberge Cannebière"
               />
               <div class="host-description">
@@ -107,7 +121,7 @@
             <a class="hosting-card" href="#"
               ><img
                 class="host-img"
-                src="images/hebergements/3_medium/port.jpg"
+                src="images/hebergements/4_small/port.jpg"
                 alt="Hôtel du port"
               />
               <div class="host-description">
@@ -128,7 +142,7 @@
             <a class="hosting-card" href="#"
               ><img
                 class="host-img"
-                src="images/hebergements/3_medium/mouettes.jpg"
+                src="images/hebergements/4_small/mouettes.jpg"
                 alt="Hôtel des mouettes"
               />
               <div class="host-description">
@@ -148,7 +162,7 @@
             <a class="hosting-card" href="#"
               ><img
                 class="host-img"
-                src="images/hebergements/3_medium/Cannebière.jpg"
+                src="images/hebergements/4_small/mer.jpg"
                 alt="Auberge Cannebière"
               />
               <div class="host-description">
@@ -168,7 +182,7 @@
             <a class="hosting-card" href="#"
               ><img
                 class="host-img"
-                src="images/hebergements/3_medium/Panier.jpg"
+                src="images/hebergements/4_small/panier.jpg"
                 alt="Auberge Le Panier"
               />
               <div class="host-description">
@@ -188,7 +202,7 @@
             <a class="hosting-card" href="#"
               ><img
                 class="host-img"
-                src="images/hebergements/3_medium/Amina.jpg"
+                src="images/hebergements/4_small/amina.jpg"
                 alt="Hôtel chez Amina "
               />
               <div class="host-description">
@@ -209,6 +223,7 @@
           <a class="plus" href="#">Afficher plus</a>
         </section>
 
+        <!--  Section Populaires  -->
         <section class="popular">
           <div class="pop-title-grp">
             <h2 class="pop-title">Les plus populaires</h2>
@@ -220,7 +235,7 @@
               ><img
                 class="pop-img"
                 id="pop-img1"
-                src="images/hebergements/3_medium/matin.jpg"
+                src="images/hebergements/4_small/matin.jpg"
                 alt="Hotel Le soleil du matin "
               />
               <div class="pop-description">
@@ -242,8 +257,8 @@
             <a class="pop-card" href="#"
               ><img
                 class="pop-img"
-                src="images/hebergements/3_medium/hôtes.jpg"
-                alt="Au coeur de l'eau chambre d'hôtes "
+                src="images/hebergements/4_small/hôtes.jpg"
+                alt="Au coeur de l'eau chambre d'hôtes "  
               />
               <div class="pop-description">
                 <div class="price">
@@ -265,7 +280,7 @@
               ><img
                 class="pop-img"
                 id="pop-img3"
-                src="images/hebergements/3_medium/blanc.jpg"
+                src="images/hebergements/4_small/blanc.jpg"
                 alt="Hôtel tout bleu et Blanc "
               />
               <div class="pop-description">
@@ -287,6 +302,8 @@
           </div>
         </section>
       </div>
+
+      <!--  Section Activités  -->
 
       <section class="activities" id="activities-link">
         <h2 class="title-activity">Activités à Marseille</h2>
@@ -347,6 +364,9 @@
         </div>
       </section>
     </main>
+
+    <!--  Section Footer  -->
+
     <footer class="footer">
       <div class="box-footers">
         <div class="block-footer">
@@ -366,6 +386,7 @@
           <a class="link" href="#">Nous contacter</a>
         </div>
       </div>
-    </footer>
+    </footer> 
+
   </body>
 </html>

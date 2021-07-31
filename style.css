@@ -78,6 +78,7 @@ header nav .nav-menu {
   padding: 1.2em;
   border-radius: 0.8em 0 0 0.8em;
   border: 1px solid #f2f2f2;
+  text-align: center;
   transform: scale(1);
   transition: 0.1s ease-in-out;
 }
@@ -552,7 +553,7 @@ span.text {
   grid-row-gap: 25px;
 }
 
-/* Grandes Photos1 */
+/* Photos1 */
 
 .activity-card1 {
   cursor: pointer;
@@ -596,7 +597,7 @@ span.text {
   margin-left: 1em;
 }
 
-/* Petites Photos2 */
+/* Photos2 */
 
 .activity-card2 {
   cursor: pointer;
@@ -641,7 +642,7 @@ span.text {
   margin-left: 1em;
 }
 
-/* Petites Photos3 */
+/* Photos3 */
 
 .activity-card3 {
   cursor: pointer;
@@ -744,7 +745,7 @@ span.text {
   text-decoration: underline;
 }
 
-/*  Version Intermédiaire */
+/*  Format Intermédiaire */
 
 
  @media all and (max-width: 1580px) {
@@ -776,7 +777,7 @@ span.text {
 
  }
 
-  /* --- Version TABLETTE --- */
+  /* --- Format TABLETTE --- */
 
 @media all and (max-width: 1360px) {
   html,
@@ -1012,7 +1013,7 @@ span.text {
 }
 
 
-  /* ------ Version MOBILE ------ */
+  /* ------ Format MOBILE ------ */
 
 @media all and (max-width: 640px) {
   html,

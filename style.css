@@ -1,4 +1,4 @@
-/* Font Page */
+/* Font Page (WHITE CARD*) */
 
 * {
   font-family: "Raleway", sans-serif;
@@ -747,20 +747,18 @@ span.text {
 
 /*  Format Intermédiaire */
 
-
- @media all and (max-width: 1580px) {
-
-  .hosting-card{
+@media all and (max-width: 1580px) {
+  .hosting-card {
     width: 40%;
     height: 28%;
-  }  
+  }
 
   .pop-card {
     width: 90%;
     height: 28%;
   }
 
-  .pop-container{
+  .pop-container {
     height: 80%;
     justify-content: inherit;
     row-gap: 1.9em;
@@ -774,10 +772,9 @@ span.text {
   #pop-img3 {
     width: 54%;
   }
+}
 
- }
-
-  /* --- Format TABLETTE --- */
+/* --- Format TABLETTE --- */
 
 @media all and (max-width: 1360px) {
   html,
@@ -785,22 +782,22 @@ span.text {
     overflow-x: hidden;
   }
 
-    /*  Section header TABLETTE */
+  /*  Section header TABLETTE */
 
-    header {
+  header {
     margin: 0 0 17px 1em;
   }
 
   .nav-menu {
     padding: 2em;
   }
-  
+
   /*  Section Recherche TABLETTE */
 
   #search-box {
     margin: 1em 0 0 1em;
   }
-  
+
   .title {
     margin-left: -2em;
   }
@@ -836,9 +833,9 @@ span.text {
     margin-left: 2.5em;
   }
 
-   /*  Section Populaires TABLETTE */
+  /*  Section Populaires TABLETTE */
 
-   .popular {
+  .popular {
     flex-wrap: wrap;
     width: 100%;
     border-radius: 0;
@@ -854,6 +851,8 @@ span.text {
     row-gap: 1em;
   }
 
+  /*  POP CARDS TABLETTE */
+  
   .pop-card {
     width: 90%;
     height: 10em;
@@ -880,16 +879,15 @@ span.text {
     height: 100%;
   }
 
-  #pop-img1{
-  width: 36% ;
+  #pop-img1 {
+    width: 36%;
   }
 
-  #pop-img3{
+  #pop-img3 {
     width: 40%;
   }
 
-  /* Sextion Hébergements TABLETTE */
-
+  /* Section Hébergements TABLETTE */
 
   .host {
     margin: 0;
@@ -912,10 +910,11 @@ span.text {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* max-height: 55em; */
     padding: 0;
     background-color: #f2f2f2;
   }
+
+  /*  HOST CARDS TABLETTE */
 
   .hosting-card {
     margin-left: 1.3em;
@@ -932,88 +931,86 @@ span.text {
     margin-top: 1em;
   }
 
- /* Section Activités TABLETTE */
+  /* Section Activités TABLETTE */
 
- .activities {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 0 2em 0;
-  align-items: center;
-  justify-content: center;
-  
+  .activities {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 2em 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title-activity {
+    padding-top: 0.6em;
+    margin-right: auto;
+    margin-left: 1.9em;
+  }
+
+  .activity-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 0;
+  }
+
+
+  /*  Activities CARDS TABLETTE */
+
+  .activity-description1,
+  .activity-description2,
+  .activity-description3 {
+    margin: 0.7em;
+    font-size: 0.85em;
+    text-align: inherit;
+  }
+
+  .activity-card1,
+  .activity-card2,
+  .activity-card3 {
+    width: 35%;
+    height: 12em;
+  }
+
+  #i1,
+  #i2,
+  #i3,
+  #i4,
+  #i5,
+  #i6 {
+    height: 11em;
+    width: 30%;
+  }
+
+  .activity-img1,
+  .activity-img2,
+  .activity-img3 {
+    height: 75%;
+  }
+
+  /*  Section Footer TABLETTE  */
+
+  .box-footers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 1em 0 0 0;
+  }
+
+  .block-footer {
+    width: 100%;
+    margin-left: 3.5em;
+  }
 }
 
-.title-activity {
-  padding-top: 0.6em;
-  margin-right: auto;
-  margin-left: 1.9em;
-}
-
-.activity-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  padding: 0;
-}
-
-.activity-description1,
-.activity-description2,
-.activity-description3 {
-  margin: 0.7em;
-  font-size: 0.85em ;
-  text-align: inherit;
-}
-
-.activity-card1,
-.activity-card2,
-.activity-card3 {
-  /* margin-left: 1.3em; */
-  width: 35%;
-  height: 12em;
-}
-
-#i1,
-#i2,
-#i3,
-#i4,
-#i5,
-#i6 {
-  height: 11em;
-  width: 30%;
-}
-
-.activity-img1,
-.activity-img2,
-.activity-img3 {
-  height: 75%;
-}
-
-/*  Section Footer TABLETTE  */
-
-
-.box-footers {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  margin: 0;
-  padding: 1em 0 0 0;
-}
-
-.block-footer {
-  width: 100%;
-  margin-left: 3.5em;
-}
-
-}
-
-
-  /* ------ Format MOBILE ------ */
+/* ------ Format MOBILE ------ */
 
 @media all and (max-width: 640px) {
   html,
@@ -1034,8 +1031,8 @@ span.text {
 
   /*  Header MOBILE */
 
-  header{
-   margin-left: 0 ;
+  header {
+    margin-left: 0;
   }
 
   .nav-menu {
@@ -1056,6 +1053,9 @@ span.text {
   header nav .nav-menu {
     padding: 17px;
   }
+
+  /*  LOGO MOBILE */
+
   .logo {
     order: 1;
     margin: 0 auto 0 1em;
@@ -1064,6 +1064,8 @@ span.text {
   .logo img {
     width: 100%;
   }
+
+  /*  NAV MOBILE */
 
   nav {
     order: 3;
@@ -1096,25 +1098,6 @@ span.text {
     margin: 0;
   }
 
-  /* Section filtres MOBILE */
-
-  .filters {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    box-sizing: border-box;
-    margin-left: 1em;
-    padding: 0;
-    width: 95%;
-  }
-
-  .buttons {
-    flex-direction: column;
-    align-items: flex-start;
-    row-gap: 0.5em;
-    margin: 0;
-  }
-
   .search {
     margin-left: 1.5em;
   }
@@ -1140,11 +1123,34 @@ span.text {
     margin-left: 1.7em;
   }
 
+  /*  Switch bouton recherche en loupe */
+
   span.icon {
     display: inline-block;
   }
   span.text {
     display: none;
+  }
+
+  /* Section filtres MOBILE */
+
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 1em;
+    padding: 0;
+    width: 95%;
+  }
+
+  /* BOUTON FILTERS */
+
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.5em;
+    margin: 0;
   }
 
   .filterstitle {
@@ -1166,7 +1172,6 @@ span.text {
     width: 100%;
   }
 
-
   #iconefilter,
   #iconefilter1,
   #iconefilter2,
@@ -1174,63 +1179,7 @@ span.text {
     margin-right: 0.5em;
   }
 
-  /*  Host&Pop MOBILE */
-
-  .host-pop {
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    width: 100%;
-    margin-left: inherit;
-  }
-
-  /*  Section Populaires MOBILE */
-
-  .popular {
-    flex-wrap: wrap;
-    width: 100%;
-    border-radius: 0;
-    padding-bottom: 2em;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pop-container {
-    width: 100%;
-    height: 100%;
-    row-gap: 1em;
-  }
-
-  .pop-card {
-    width: 85%;
-    height: 10em;
-  }
-
-  .pop-title {
-    margin-left: 0.2em;
-    margin-top: 0.3em;
-    width: 80%;
-  }
-
-  .fa-chart-line {
-    margin-left: 3em;
-    font-size: 1.4em;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0;
-  }
-
-  .pop-img {
-    width: 40%;
-    height: 100%;
-  }
-
-  #pop-img1{
-    width: 40% ;
-    }
-
-  #pop-img3 {
-    width: 48%;
-  }
+  /*  Info filters MOBILE */
 
   .info {
     width: 100%;
@@ -1256,6 +1205,68 @@ span.text {
     border-radius: 100%;
     width: 1.8rem;
     height: 1.8rem;
+  }
+
+  /*  Host&Pop MOBILE */
+
+  .host-pop {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: inherit;
+  }
+
+  /*  Section Populaires MOBILE */
+
+  .popular {
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 0;
+    padding-bottom: 2em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*  Pop CONTAINER MOBILE */
+
+  .pop-container {
+    width: 100%;
+    height: 100%;
+    row-gap: 1em;
+  }
+
+  /*  Pop CARDS MOBILE */
+
+  .pop-card {
+    width: 85%;
+    height: 10em;
+  }
+
+  .pop-title {
+    margin-left: 0.2em;
+    margin-top: 0.3em;
+    width: 80%;
+  }
+
+  .fa-chart-line {
+    margin-left: 3em;
+    font-size: 1.4em;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .pop-img {
+    width: 40%;
+    height: 100%;
+  }
+
+  #pop-img1 {
+    width: 40%;
+  }
+
+  #pop-img3 {
+    width: 48%;
   }
 
   /*  Section Hébergements MOBILE */
@@ -1284,6 +1295,8 @@ span.text {
     background-color: #ffffff;
     max-height: inherit;
   }
+
+  /*  HOST CARD MOBILE */
 
   .hosting-card {
     width: 85%;
@@ -1315,6 +1328,8 @@ span.text {
     margin-left: 0.7em;
   }
 
+  /*  GROUPE ACTIVITÉS GRID MOBILE  */
+
   .activity-group {
     display: grid;
     grid-template-columns: 1fr;
@@ -1326,6 +1341,8 @@ span.text {
     align-items: center;
     width: 90%;
   }
+
+  /*  ACTIVITIES CARDS */
 
   .activity-description1,
   .activity-description2,

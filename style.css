@@ -1,4 +1,4 @@
-/* Font Page (WHITE CARD*) */
+/* Font Page */
 
 * {
   font-family: "Raleway", sans-serif;
@@ -381,7 +381,7 @@ span.text {
   padding-right: 0.3em;
 }
 
-/* Les plus populaire */
+/* Les plus populaires */
 
 .popular {
   background-color: #f2f2f2;
@@ -592,7 +592,6 @@ span.text {
   justify-content: start;
   font-size: large;
   width: 100%;
-  /* height: 100%; */
   font-weight: bold;
   margin-left: 1em;
 }
@@ -637,7 +636,6 @@ span.text {
   align-items: center;
   font-size: large;
   width: 70%;
-  /* height: 100%; */
   font-weight: bold;
   margin-left: 1em;
 }
@@ -678,12 +676,10 @@ span.text {
 .activity-description3 {
   display: flex;
   flex-direction: row;
-  /* text-align: justify; */
   justify-content: start;
   align-items: center;
   font-size: large;
   width: 100%;
-  /* height: 100%; */
   font-weight: bold;
   margin-left: 1em;
 }
@@ -880,7 +876,7 @@ span.text {
   }
 
   #pop-img1 {
-    width: 36%;
+    width: 40%;
   }
 
   #pop-img3 {

@@ -1,3 +1,5 @@
+/*  Format Desktop  */
+
 /* Font Page */
 
 * {
@@ -360,6 +362,7 @@ span.text {
 .host-description p {
   margin: 0;
 }
+
 /*  Stars */
 
 .stars-host {
